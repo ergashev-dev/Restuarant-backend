@@ -58,9 +58,7 @@ exports.editCategory = async (req, res) => {
                 message: `Kategoriya topilmadi!`
             })
         }
-        res.status(200).json({
-            message: `Kategoriya yangilandi!`
-        })
+        res.status(200).json(category)
     } catch (error) {
         res.status(500).json({
             message: `Xatolik yuz berdi: ${error.message}`
